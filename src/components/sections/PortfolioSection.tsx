@@ -1,13 +1,18 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import ProjectPreview from '@/components/ui/ProjectPreview';
 import BrowserMockup from '@/components/ui/BrowserMockup';
+
+const CATEGORIES = ['ALL', 'WEBSITES', 'BRANDING', 'LOCAL SEO', 'AI & SAAS'] as const;
+type CategoryFilter = (typeof CATEGORIES)[number];
 
 const projects = [
   {
     id: '01',
     title: 'Healthcare Clinic',
     category: 'Website & Local SEO',
+    filterTag: 'WEBSITES',
     description:
       'A premium digital experience designed to increase appointment bookings, build trust, and improve local search visibility.',
     tags: ['Mobile First', 'Conversion Optimized', 'SEO Ready'],
@@ -16,6 +21,7 @@ const projects = [
     id: '02',
     title: 'Modern Gym',
     category: 'Brand Identity & Lead Generation',
+    filterTag: 'BRANDING',
     description:
       'A bold brand identity and lead-generation system engineered to fill class schedules and grow a modern fitness membership base.',
     tags: ['Brand System', 'Lead Capture', 'High Contrast UI'],
@@ -24,6 +30,7 @@ const projects = [
     id: '03',
     title: 'Premium Restaurant',
     category: 'Digital Presence',
+    filterTag: 'WEBSITES',
     description:
       'An elegant dining experience translated online — menu storytelling, reservations, and a presence built to match the room.',
     tags: ['Menu Showcase', 'Reservations Ready', 'Local Presence'],
@@ -32,6 +39,7 @@ const projects = [
     id: '04',
     title: 'Luxury Real Estate',
     category: 'High-End Property Experience',
+    filterTag: 'LOCAL SEO',
     description:
       'A refined property showcase built to make seven-figure listings feel as considered online as they are in person.',
     tags: ['Listing Showcase', 'Editorial Layout', 'Premium Feel'],
@@ -40,6 +48,7 @@ const projects = [
     id: '05',
     title: 'AI SaaS Dashboard',
     category: 'Product Website & UI',
+    filterTag: 'AI & SAAS',
     description:
       'A product website and dashboard UI designed to make a complex AI platform feel effortless, credible, and fast.',
     tags: ['Product UI', 'Data Visualization', 'Dark Mode Native'],
@@ -48,6 +57,7 @@ const projects = [
     id: '06',
     title: 'Formula 1 Team Experience',
     category: 'Interactive Marketing Website',
+    filterTag: 'WEBSITES',
     description:
       'A high-energy marketing site concept built to carry motorsport intensity into every scroll, stat, and driver reveal.',
     tags: ['Motion Design', 'Interactive Stats', 'High Energy Brand'],
@@ -103,7 +113,12 @@ function ProjectCaseStudy({
   };
 
   return (
-    <div
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
       data-testid={`portfolio-case-${project.id}`}
       className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10 items-center py-16 md:py-24 border-b border-white/[0.06] last:border-b-0"
     >
@@ -175,11 +190,18 @@ function ProjectCaseStudy({
           <ProjectPreview id={project.id} />
         </BrowserMockup>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 
 export default function PortfolioSection() {
+  const [activeFilter, setActiveFilter] = useState<CategoryFilter>('ALL');
+
+  const filteredProjects = projects.filter((project) => {
+    if (activeFilter === 'ALL') return true;
+    return project.filterTag === activeFilter;
+  });
+
   return (
     <section id="portfolio" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -187,26 +209,45 @@ export default function PortfolioSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
-          className="mb-8 md:mb-10"
+          className="mb-10 md:mb-12"
         >
           <h2 className="font-mono text-primary text-sm tracking-widest uppercase mb-4">02 / Portfolio</h2>
-          <div className="flex items-end justify-between">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <h3 className="font-serif text-5xl md:text-7xl text-white italic">The Standard</h3>
-            <p className="hidden md:block font-mono text-xs text-white/30 max-w-xs text-right leading-relaxed">
-              Concept projects — imagined case studies showcasing our craft, not completed client work.
+            <p className="font-mono text-xs text-white/40 max-w-xs md:text-right leading-relaxed">
+              Concept projects — imagined case studies showcasing our craft.
             </p>
+          </div>
+
+          {/* Category Filter Pills */}
+          <div className="flex flex-wrap items-center gap-3 mt-10">
+            {CATEGORIES.map((cat) => {
+              const isActive = activeFilter === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setActiveFilter(cat)}
+                  data-testid={`portfolio-filter-${cat.toLowerCase().replace(/\s+/g, '-')}`}
+                  className={`relative font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 rounded-full transition-all duration-300 cursor-hover border ${
+                    isActive
+                      ? 'border-primary text-black bg-primary font-bold shadow-[0_0_20px_rgba(212,175,55,0.3)]'
+                      : 'border-white/15 text-white/60 bg-black/40 hover:border-white/35 hover:text-white'
+                  }`}
+                >
+                  {cat}
+                </button>
+              );
+            })}
           </div>
         </motion.div>
 
-        <div>
-          {projects.map((project, index) => (
-            <ProjectCaseStudy key={project.id} project={project} index={index} />
-          ))}
-        </div>
-
-        <p className="md:hidden mt-4 font-mono text-xs text-white/30 text-center leading-relaxed">
-          Concept projects — imagined case studies showcasing our craft, not completed client work.
-        </p>
+        <AnimatePresence mode="wait">
+          <motion.div key={activeFilter}>
+            {filteredProjects.map((project, index) => (
+              <ProjectCaseStudy key={project.id} project={project} index={index} />
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

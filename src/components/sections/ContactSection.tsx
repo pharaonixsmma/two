@@ -213,7 +213,7 @@ export default function ContactSection() {
                       value={form.name}
                       onChange={e => handleChange('name', e.target.value)}
                       data-testid="contact-input-name"
-                      className={`w-full bg-background/60 border ${errors.name ? 'border-red-500/50' : 'border-white/10'} text-white placeholder:text-white/30 font-sans text-sm px-4 md:px-5 py-3 md:py-4 rounded-sm focus:outline-none focus:border-primary/50 transition-colors`}
+                      className={`w-full bg-black/70 backdrop-blur-md border ${errors.name ? 'border-red-500/50' : 'border-white/15'} text-white placeholder:text-white/35 font-sans text-sm px-4 md:px-5 py-3.5 md:py-4 rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-all`}
                     />
                     {errors.name && <p className="font-mono text-xs text-red-400/80 mt-1">{errors.name}</p>}
                   </div>
@@ -228,7 +228,7 @@ export default function ContactSection() {
                       value={form.businessName}
                       onChange={e => handleChange('businessName', e.target.value)}
                       data-testid="contact-input-business"
-                      className={`w-full bg-background/60 border ${errors.businessName ? 'border-red-500/50' : 'border-white/10'} text-white placeholder:text-white/30 font-sans text-sm px-4 md:px-5 py-3 md:py-4 rounded-sm focus:outline-none focus:border-primary/50 transition-colors`}
+                      className={`w-full bg-black/70 backdrop-blur-md border ${errors.businessName ? 'border-red-500/50' : 'border-white/15'} text-white placeholder:text-white/35 font-sans text-sm px-4 md:px-5 py-3.5 md:py-4 rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-all`}
                     />
                     {errors.businessName && <p className="font-mono text-xs text-red-400/80 mt-1">{errors.businessName}</p>}
                   </div>
@@ -246,7 +246,7 @@ export default function ContactSection() {
                       value={form.phone}
                       onChange={e => handleChange('phone', e.target.value)}
                       data-testid="contact-input-phone"
-                      className={`w-full bg-background/60 border ${errors.phone ? 'border-red-500/50' : 'border-white/10'} text-white placeholder:text-white/30 font-sans text-sm px-4 md:px-5 py-3 md:py-4 rounded-sm focus:outline-none focus:border-primary/50 transition-colors`}
+                      className={`w-full bg-black/70 backdrop-blur-md border ${errors.phone ? 'border-red-500/50' : 'border-white/15'} text-white placeholder:text-white/35 font-sans text-sm px-4 md:px-5 py-3.5 md:py-4 rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-all`}
                     />
                     {errors.phone && <p className="font-mono text-xs text-red-400/80 mt-1">{errors.phone}</p>}
                   </div>
@@ -261,7 +261,7 @@ export default function ContactSection() {
                       value={form.email}
                       onChange={e => handleChange('email', e.target.value)}
                       data-testid="contact-input-email"
-                      className={`w-full bg-background/60 border ${errors.email ? 'border-red-500/50' : 'border-white/10'} text-white placeholder:text-white/30 font-sans text-sm px-4 md:px-5 py-3 md:py-4 rounded-sm focus:outline-none focus:border-primary/50 transition-colors`}
+                      className={`w-full bg-black/70 backdrop-blur-md border ${errors.email ? 'border-red-500/50' : 'border-white/15'} text-white placeholder:text-white/35 font-sans text-sm px-4 md:px-5 py-3.5 md:py-4 rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-all`}
                     />
                     {errors.email && <p className="font-mono text-xs text-red-400/80 mt-1">{errors.email}</p>}
                   </div>
@@ -276,7 +276,7 @@ export default function ContactSection() {
                     aria-label="Select a service"
                     aria-invalid={!!errors.service}
                     data-testid="contact-select-service"
-                    className={`w-full bg-background/60 border ${errors.service ? 'border-red-500/50' : 'border-white/10'} text-white font-sans text-sm px-4 md:px-5 py-3 md:py-4 rounded-sm focus:outline-none focus:border-primary/50 transition-colors appearance-none cursor-pointer`}
+                    className={`w-full bg-black/70 backdrop-blur-md border ${errors.service ? 'border-red-500/50' : 'border-white/15'} text-white font-sans text-sm px-4 md:px-5 py-3.5 md:py-4 rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/40 transition-all appearance-none cursor-pointer`}
                   >
                     <option value="" className="bg-[#171717]">Select a service</option>
                     {SERVICES.map(s => (

@@ -65,9 +65,12 @@ export default function BrowserMockup({ children, className = '' }: BrowserMocku
             <span className="w-[9px] h-[9px] rounded-full bg-[#D4AF37]/70" />
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <div className="flex items-center gap-2 px-3 py-[5px] rounded-full bg-black/40 border border-white/[0.06] max-w-[220px] w-full">
-              <span className="w-[5px] h-[5px] rounded-full bg-[#D4AF37]/60 shrink-0" />
-              <span className="h-[3px] flex-1 rounded-full bg-white/10" />
+            <div className="flex items-center justify-between gap-2 px-3 py-[4px] rounded-full bg-black/60 border border-primary/20 max-w-[240px] w-full">
+              <div className="flex items-center gap-2 overflow-hidden">
+                <span className="w-[6px] h-[6px] rounded-full bg-primary animate-pulse shrink-0" />
+                <span className="font-mono text-[10px] text-white/50 truncate">pharaonix.app/preview</span>
+              </div>
+              <span className="font-mono text-[9px] text-primary/80 uppercase tracking-widest shrink-0">LIVE</span>
             </div>
           </div>
           <div className="w-4 shrink-0" />
