@@ -176,6 +176,7 @@
   height: 100vh;
   z-index: -1;
   pointer-events: none;
+  filter: brightness(0.65) contrast(1.1);
 }
 
 .glass {

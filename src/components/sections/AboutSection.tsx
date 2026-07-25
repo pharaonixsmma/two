@@ -86,12 +86,12 @@ export default function AboutSection() {
           </div>
 
           {/* Right col — body copy + stats */}
-          <div ref={textRef} className="md:col-span-8 flex flex-col justify-center bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/10 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
-            <div className="space-y-6 md:space-y-8 font-sans font-light text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed">
-              <p className="reveal-up text-white font-medium">
+          <div ref={textRef} className="md:col-span-8 flex flex-col justify-center">
+            <div className="space-y-6 md:space-y-8 font-sans font-light text-base md:text-xl lg:text-2xl text-white/90 leading-relaxed">
+              <p className="reveal-up text-white">
                 Built around your business, not around our credentials. We understand the Indian market — the ambitions, the constraints, and what it actually takes to compete and win.
               </p>
-              <p className="reveal-up text-white/90">
+              <p className="reveal-up text-white/80">
                 We know that small and medium businesses need solutions that drive actual revenue, not just vanity metrics. Every system we build is designed to bring you more enquiries, better brand recognition, and measurable growth.
               </p>
               <p className="reveal-up text-xs md:text-sm text-primary font-mono uppercase tracking-wider font-semibold">

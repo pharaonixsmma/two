@@ -104,8 +104,8 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
 
           {/* ─── Left column: headline + Connect With Us ─── */}
-          <div className="bg-black/60 backdrop-blur-md p-8 md:p-10 rounded-3xl border border-white/10 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
-            <h2 className="font-mono text-primary text-xs md:text-sm tracking-widest uppercase mb-5 md:mb-6 font-bold">05 / Contact</h2>
+          <div>
+            <h2 className="font-mono text-primary text-xs md:text-sm tracking-widest uppercase mb-5 md:mb-6">05 / Contact</h2>
             <h3 className="font-serif italic font-light text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.95] text-white mb-6 md:mb-8">
               Let's create<br />
               something<br />

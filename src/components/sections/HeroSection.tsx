@@ -81,8 +81,8 @@ export default function HeroSection(_props: HeroSectionProps = {}) {
             </div>
           </h1>
 
-          <div className="overflow-hidden mt-8 mb-10 max-w-2xl">
-            <p className="reveal-text font-sans font-light text-white/95 text-lg md:text-xl leading-relaxed bg-black/50 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+          <div className="overflow-hidden mt-8 mb-10 max-w-xl">
+            <p className="reveal-text font-sans font-light text-white/90 text-lg md:text-xl leading-relaxed">
               Helping Indian businesses grow through premium websites, social media management, advertising, graphic design, scripting &amp; shooting, and content creation.
             </p>
           </div>
