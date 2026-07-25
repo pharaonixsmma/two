@@ -104,20 +104,20 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
 
           {/* ─── Left column: headline + Connect With Us ─── */}
-          <div>
-            <h2 className="font-mono text-primary text-xs md:text-sm tracking-widest uppercase mb-5 md:mb-6">05 / Contact</h2>
+          <div className="bg-black/60 backdrop-blur-md p-8 md:p-10 rounded-3xl border border-white/10 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+            <h2 className="font-mono text-primary text-xs md:text-sm tracking-widest uppercase mb-5 md:mb-6 font-bold">05 / Contact</h2>
             <h3 className="font-serif italic font-light text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.95] text-white mb-6 md:mb-8">
               Let's create<br />
               something<br />
               extraordinary
             </h3>
-            <p className="font-sans text-muted-foreground text-base md:text-lg mb-10 md:mb-12 leading-relaxed max-w-sm">
+            <p className="font-sans text-white/90 text-base md:text-lg mb-10 md:mb-12 leading-relaxed max-w-sm font-medium">
               Whether you have a specific project in mind or just want to know what's possible — book a free consultation and we'll map out the path.
             </p>
 
             {/* ─── Connect With Us ─── */}
             <div>
-              <p className="font-mono text-primary text-xs tracking-[0.25em] uppercase mb-5">Connect With Us</p>
+              <p className="font-mono text-primary text-xs tracking-[0.25em] uppercase mb-5 font-bold">Connect With Us</p>
 
               {/* Phone & Email */}
               <div className="space-y-3 mb-8">
@@ -130,10 +130,10 @@ export default function ContactSection() {
                     className="group flex items-center gap-3 w-fit cursor-hover"
                     data-testid={`contact-link-${item.type}`}
                   >
-                    <span className="flex items-center justify-center w-8 h-8 rounded-full border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/10 transition-all duration-300 flex-shrink-0">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full border border-white/15 bg-black/40 group-hover:border-primary/50 group-hover:bg-primary/10 transition-all duration-300 flex-shrink-0">
                       <item.icon size={14} className="text-primary" />
                     </span>
-                    <span className="font-mono text-xs md:text-sm text-white/60 group-hover:text-white transition-colors duration-300 break-all">
+                    <span className="font-mono text-xs md:text-sm text-white/90 group-hover:text-primary transition-colors duration-300 break-all font-medium">
                       {item.label}
                     </span>
                   </motion.a>

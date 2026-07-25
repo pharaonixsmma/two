@@ -223,7 +223,7 @@ function ServiceBlock({ service }: { service: Service }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 0.75, ease: EXPO, delay: 0.22 }}
-        className="font-sans text-base md:text-[1.0625rem] text-white/55 leading-[1.75] mb-10"
+        className="font-sans text-base md:text-[1.0625rem] text-white/90 leading-[1.75] mb-10"
       >
         {service.description}
       </motion.p>
@@ -239,8 +239,8 @@ function ServiceBlock({ service }: { service: Service }) {
             transition={{ duration: 0.55, ease: EXPO, delay: 0.3 + i * 0.09 }}
             className="flex items-center gap-4"
           >
-            <span className="w-6 h-px bg-primary/55 flex-shrink-0" />
-            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-white/50">
+            <span className="w-6 h-px bg-primary flex-shrink-0" />
+            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-white/85 font-medium">
               {outcome}
             </span>
           </motion.li>

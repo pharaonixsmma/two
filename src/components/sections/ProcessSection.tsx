@@ -68,16 +68,16 @@ export default function ProcessSection() {
               <div
                 key={step.num}
                 ref={el => { stepRefs.current[index] = el; }}
-                className="group flex flex-col cursor-hover"
+                className="group flex flex-col cursor-hover bg-black/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
                 data-testid={`process-step-${step.num}`}
               >
-                <div className="hidden md:flex mb-6 w-3 h-3 rounded-full bg-[#0B0B0B] border-2 border-primary group-hover:scale-150 group-hover:bg-primary transition-all duration-300 relative top-[-6px]" />
+                <div className="hidden md:flex mb-6 w-3 h-3 rounded-full bg-black border-2 border-primary group-hover:scale-150 group-hover:bg-primary transition-all duration-300 relative top-[-6px]" />
 
-                <div className="font-serif text-5xl text-white/20 group-hover:text-primary transition-colors duration-500 mb-4">
+                <div className="font-serif text-5xl text-white/50 group-hover:text-primary transition-colors duration-500 mb-4 font-bold">
                   {step.num}
                 </div>
                 <h3 className="font-sans font-bold text-xl text-white mb-2">{step.title}</h3>
-                <p className="font-mono text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
+                <p className="font-mono text-xs text-white/85 leading-relaxed font-medium">{step.desc}</p>
               </div>
             ))}
           </div>

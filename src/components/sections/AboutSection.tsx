@@ -86,39 +86,39 @@ export default function AboutSection() {
           </div>
 
           {/* Right col — body copy + stats */}
-          <div ref={textRef} className="md:col-span-8 flex flex-col justify-center">
-            <div className="space-y-6 md:space-y-8 font-sans font-light text-base md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-              <p className="reveal-up text-white">
+          <div ref={textRef} className="md:col-span-8 flex flex-col justify-center bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/10 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+            <div className="space-y-6 md:space-y-8 font-sans font-light text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed">
+              <p className="reveal-up text-white font-medium">
                 Built around your business, not around our credentials. We understand the Indian market — the ambitions, the constraints, and what it actually takes to compete and win.
               </p>
-              <p className="reveal-up">
+              <p className="reveal-up text-white/90">
                 We know that small and medium businesses need solutions that drive actual revenue, not just vanity metrics. Every system we build is designed to bring you more enquiries, better brand recognition, and measurable growth.
               </p>
-              <p className="reveal-up text-xs md:text-sm text-white/40 font-mono uppercase tracking-wider">
+              <p className="reveal-up text-xs md:text-sm text-primary font-mono uppercase tracking-wider font-semibold">
                 Serving businesses across India — fully remote, always personal.
               </p>
             </div>
 
-            <div ref={dividerRef} className="w-full h-px bg-white/10 my-10 md:my-16 origin-left" />
+            <div ref={dividerRef} className="w-full h-px bg-white/15 my-8 md:my-12 origin-left" />
 
             <div ref={numbersRef} className="grid grid-cols-3 gap-4 md:gap-8">
               <div>
-                <div className="font-serif text-3xl md:text-5xl text-primary mb-1 md:mb-2">
+                <div className="font-serif text-3xl md:text-5xl text-primary font-bold mb-1 md:mb-2">
                   <span className="stat-num">6</span>+
                 </div>
-                <div className="font-mono text-[10px] md:text-xs text-white/50 uppercase tracking-wider leading-tight">Core Services</div>
+                <div className="font-mono text-[10px] md:text-xs text-white/90 uppercase tracking-wider leading-tight font-medium">Core Services</div>
               </div>
               <div>
-                <div className="font-serif text-3xl md:text-5xl text-primary mb-1 md:mb-2">
+                <div className="font-serif text-3xl md:text-5xl text-primary font-bold mb-1 md:mb-2">
                   <span className="stat-num">100</span>%
                 </div>
-                <div className="font-mono text-[10px] md:text-xs text-white/50 uppercase tracking-wider leading-tight">Revenue-Focused</div>
+                <div className="font-mono text-[10px] md:text-xs text-white/90 uppercase tracking-wider leading-tight font-medium">Revenue-Focused</div>
               </div>
               <div>
-                <div className="font-serif text-3xl md:text-5xl text-primary mb-1 md:mb-2">
+                <div className="font-serif text-3xl md:text-5xl text-primary font-bold mb-1 md:mb-2">
                   <span className="stat-num">24</span>/7
                 </div>
-                <div className="font-mono text-[10px] md:text-xs text-white/50 uppercase tracking-wider leading-tight">AI Systems Active</div>
+                <div className="font-mono text-[10px] md:text-xs text-white/90 uppercase tracking-wider leading-tight font-medium">AI Systems Active</div>
               </div>
             </div>
           </div>
