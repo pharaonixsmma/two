@@ -18,7 +18,7 @@
   // Format frame filename: frame_001.jpg, frame_002.jpg, ...
   function getFramePath(index) {
     const padded = String(index + 1).padStart(3, '0');
-    return `public/frames/frame_${padded}.jpg`;
+    return `frames/frame_${padded}.jpg`;
   }
 
   // Preload frames progressively
