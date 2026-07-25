@@ -1,0 +1,221 @@
+We are improving the existing PHARAONIX website. Do NOT rebuild the website from scratch.
+
+IMPORTANT:
+- Preserve the existing architecture, routing, particle system, responsiveness, and sections.
+- Only redesign the Navigation and Hero.
+- Keep the black + gold luxury branding.
+- Do not modify Services, Portfolio, Process, Contact, or Footer.
+
+========================================================
+NAVIGATION REDESIGN
+========================================================
+
+Create a premium floating navigation inspired by Apple's modern glass design, but adapted to PHARAONIX's luxury black-and-gold identity.
+
+Requirements:
+
+• Floating navigation (not edge-to-edge)
+• Rounded corners (20–28px)
+• Fixed at the top
+• Transparent while at the very top of the page
+• After scrolling:
+  - dark smoked glass
+  - backdrop blur (24–30px)
+  - rgba(10,10,10,0.45–0.55)
+  - thin white border (rgba(255,255,255,0.08))
+  - soft shadow
+  - smooth transition (400ms)
+
+Navigation links:
+
+• Elegant spacing
+• Slight letter spacing
+• Underline animation on hover
+• Active section indicator
+• Smooth hover effects
+
+CTA Button:
+
+"Start a Project"
+
+• Premium pill shape
+• Gold outline
+• Soft hover fill
+• Smooth transitions
+• Slight lift animation
+
+Navigation should feel minimal, luxurious and expensive.
+
+========================================================
+HERO REDESIGN
+========================================================
+
+Redesign only the Hero section.
+
+Goals:
+
+Create an unforgettable first impression.
+
+The hero should feel like a premium creative agency—not a SaaS template.
+
+Layout:
+
+• Full viewport height (100vh)
+• Perfect vertical alignment
+• Large editorial typography
+• Massive whitespace
+• Minimal supporting text
+• Two CTAs:
+   - Start a Project
+   - View Work
+
+Typography:
+
+Use oversized editorial typography.
+
+Example hierarchy:
+
+FROM VISION
+TO VICTORY.
+
+Supporting text:
+
+"Building premium digital experiences through strategy, design, AI, and development."
+
+Keep supporting copy short.
+
+========================================================
+PARTICLE SYSTEM
+========================================================
+
+Keep the existing particle background.
+
+Do NOT replace it.
+
+Instead improve it.
+
+Enhancements:
+
+• Better depth
+• More natural motion
+• Better cursor interaction
+• Smooth interpolation
+• Slight inertia
+• Higher quality animation
+• Improved lighting perception
+• Maintain excellent FPS
+
+Entrance sequence:
+
+When page loads:
+
+Particles slowly gather
+↓
+
+Create a beautiful flowing animation
+
+↓
+
+Transition naturally into the interactive particle state
+
+No flashy explosions.
+
+Elegant only.
+
+========================================================
+SCROLL INDICATOR
+========================================================
+
+Replace the current indicator with a premium minimal design.
+
+Example:
+
+SCROLL
+
+│
+│
+│
+
+Animated line.
+
+Very subtle.
+
+========================================================
+HERO ANIMATIONS
+========================================================
+
+Use GSAP where appropriate.
+
+Create a premium entrance sequence:
+
+1. Navigation fades in
+2. Particles animate
+3. Headline reveals line-by-line
+4. Supporting text fades in
+5. CTA buttons animate
+6. Scroll indicator appears
+
+Animation style:
+
+• Smooth
+• Cinematic
+• Luxury
+• Premium
+• Deliberate
+
+No excessive bouncing.
+
+========================================================
+PERFORMANCE
+========================================================
+
+Maintain 60 FPS.
+
+Do not introduce heavy shaders.
+
+Optimize particle calculations.
+
+Keep the website lightweight.
+
+========================================================
+DESIGN STYLE
+========================================================
+
+Reference style:
+
+- Apple glass navigation
+- Editorial typography
+- Luxury creative agencies
+- Black + gold aesthetic
+- Minimal
+- Timeless
+- Elegant
+
+Avoid:
+
+- Generic AI templates
+- Neon cyberpunk
+- Excessive glow
+- Glass everywhere
+- Over-animation
+- Clutter
+
+========================================================
+IMPORTANT
+========================================================
+
+Do NOT touch:
+
+• Services
+• Portfolio
+• Process
+• About
+• Contact
+• Footer
+
+Only complete:
+
+1. Navigation
+2. Hero
+
+After finishing, verify responsiveness, animations, and performance before stopping.

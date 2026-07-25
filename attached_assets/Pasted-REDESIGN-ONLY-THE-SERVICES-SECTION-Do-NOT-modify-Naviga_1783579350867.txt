@@ -1,0 +1,297 @@
+REDESIGN ONLY THE SERVICES SECTION.
+
+Do NOT modify:
+- Navigation
+- Hero
+- Scroll storytelling
+- Portfolio
+- Contact
+- Footer
+
+The goal is to transform the Services section from a simple list/accordion into a premium editorial showcase similar to world-class creative agency websites.
+
+========================================================
+DESIGN PHILOSOPHY
+========================================================
+
+Each service should feel like its own premium landing page.
+
+Instead of switching one preview card, every service gets its own dedicated showcase.
+
+Visitors should naturally scroll through the services as if they are browsing a design portfolio.
+
+Avoid dashboards, templates, pricing-table layouts or repetitive cards.
+
+The experience should feel cinematic, luxurious, editorial and handcrafted.
+
+========================================================
+LAYOUT
+========================================================
+
+Create four large sections.
+
+Alternate the layout to create rhythm.
+
+Example:
+
+------------------------------------------------
+
+SERVICE 01
+
+Website Design
+
+Description
+
+CTA
+
+                    Large Browser Preview
+
+------------------------------------------------
+
+SERVICE 02
+
+Large Branding Preview
+
+                    Brand Identity
+
+                    Description
+
+                    CTA
+
+------------------------------------------------
+
+SERVICE 03
+
+AI Automation
+
+Description
+
+CTA
+
+                    Large SaaS Preview
+
+------------------------------------------------
+
+SERVICE 04
+
+Large Analytics Preview
+
+                    Digital Marketing
+
+                    Description
+
+                    CTA
+
+------------------------------------------------
+
+Alternate left/right positioning throughout the section.
+
+Never repeat the exact same layout twice.
+
+========================================================
+SPACING
+========================================================
+
+Massive editorial spacing.
+
+Large breathing room.
+
+Each service should almost feel like its own page.
+
+Do not compress content.
+
+Whitespace should become part of the design.
+
+========================================================
+PREVIEW DESIGN
+========================================================
+
+Every preview must look like a real premium product.
+
+DO NOT use:
+
+❌ Placeholder rectangles
+
+❌ Generic wireframes
+
+❌ Fake dashboard boxes
+
+❌ Empty cards
+
+Instead build actual miniature interfaces.
+
+========================================================
+SERVICE 01
+WEBSITE DESIGN
+========================================================
+
+Create a realistic premium agency website.
+
+Include:
+
+• Browser window
+• Floating navigation
+• Hero section
+• CTA
+• Feature sections
+• Project showcase
+• Testimonials
+• Footer
+
+Everything should resemble a real website.
+
+========================================================
+SERVICE 02
+BRAND IDENTITY
+========================================================
+
+Create a realistic branding presentation.
+
+Include:
+
+• Logo exploration
+• Typography
+• Color palette
+• Brand system
+• Business cards
+• Packaging
+• Social media assets
+
+Make it resemble a Behance-quality branding project.
+
+========================================================
+SERVICE 03
+AI AUTOMATION
+========================================================
+
+Create a modern AI platform.
+
+Include:
+
+• Workflow builder
+• AI assistant
+• CRM integration
+• Automation nodes
+• Analytics
+• Notifications
+• Status indicators
+
+It should resemble a premium SaaS product.
+
+========================================================
+SERVICE 04
+DIGITAL MARKETING
+========================================================
+
+Create a realistic analytics dashboard.
+
+Include:
+
+• Revenue charts
+• Growth metrics
+• Conversion graphs
+• Audience insights
+• Campaign overview
+• KPI widgets
+
+Everything should feel like a real enterprise product.
+
+========================================================
+MICRO ANIMATIONS
+========================================================
+
+Each section animates independently.
+
+When entering viewport:
+
+• Text reveals line by line
+• Preview fades upward
+• Browser window scales from 98% to 100%
+• Charts animate
+• Numbers count
+• Progress bars fill
+• Cards appear sequentially
+
+Animations should feel smooth and expensive.
+
+========================================================
+3D INTERACTION
+========================================================
+
+Each preview should react to the cursor.
+
+Very subtle only.
+
+• Soft 3D tilt
+• Floating shadow
+• Glass reflection
+• Smooth interpolation
+• Gentle easing
+
+Avoid exaggerated movement.
+
+========================================================
+EDITORIAL STYLE
+========================================================
+
+Typography should dominate.
+
+Large headings.
+
+Minimal body text.
+
+Premium spacing.
+
+Confident composition.
+
+Alternate layouts to avoid repetition.
+
+========================================================
+RESPONSIVENESS
+========================================================
+
+Desktop:
+
+Alternating left/right editorial layout.
+
+Tablet:
+
+Reduce spacing while preserving composition.
+
+Mobile:
+
+Stack each preview beneath its service.
+
+Maintain hierarchy.
+
+========================================================
+PERFORMANCE
+========================================================
+
+Reuse existing GSAP animations.
+
+Do not introduce unnecessary npm packages.
+
+Only animate sections when they enter the viewport.
+
+Maintain 60 FPS.
+
+========================================================
+FINAL QUALITY CHECK
+========================================================
+
+Before finishing verify:
+
+✓ Every service has its own large editorial showcase.
+
+✓ Every preview looks like a real product instead of placeholders.
+
+✓ Layout alternates left and right.
+
+✓ Large whitespace is preserved.
+
+✓ Animations remain smooth.
+
+✓ The section feels like a premium agency portfolio.
+
+✓ Existing sections outside Services remain untouched.

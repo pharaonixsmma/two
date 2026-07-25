@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scroll Video Hero</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Scroll Track Container -->
-  <div class="scroll-container">
-    <div class="canvas-sticky-wrapper">
-      <canvas id="hero-canvas"></canvas>
-      <div id="loader-bar" class="loader-bar"></div>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>PHARAONIX | Website Development, Social Media &amp; Digital Marketing</title>
+    <meta name="description" content="PHARAONIX helps Indian businesses grow through premium website development, social media management, digital advertising, graphic design, and reel creation. From Vision to Victory." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://pharaonix.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PHARAONIX" />
+    <meta property="og:title" content="PHARAONIX | Website Development, Social Media &amp; Digital Marketing" />
+    <meta property="og:description" content="PHARAONIX helps Indian businesses grow through premium website development, social media management, digital advertising, graphic design, and reel creation. From Vision to Victory." />
+    <meta property="og:url" content="https://pharaonix.vercel.app/" />
+    <meta property="og:image" content="https://pharaonix.vercel.app/opengraph.jpg" />
+    <meta property="og:image:alt" content="PHARAONIX logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PHARAONIX | Website Development, Social Media &amp; Digital Marketing" />
+    <meta name="twitter:description" content="PHARAONIX helps Indian businesses grow through premium website development, social media management, digital advertising, graphic design, and reel creation. From Vision to Victory." />
+    <meta name="twitter:image" content="https://pharaonix.vercel.app/opengraph.jpg" />
+    <link rel="icon" type="image/png" href="/pharaonix-logo.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#D4AF37" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://pharaonix.vercel.app/#organization",
+          "name": "PHARAONIX",
+          "url": "https://pharaonix.vercel.app/",
+          "logo": "https://pharaonix.vercel.app/pharaonix-logo.png",
+          "description": "PHARAONIX helps Indian businesses grow through premium website development, social media management, digital advertising, graphic design, and reel creation. From Vision to Victory.",
+          "email": "pharaonix.smma@gmail.com",
+          "telephone": "+91-7827963592",
+          "sameAs": [
+            "https://www.instagram.com/pharaonix.smma",
+            "https://x.com/pharaonix_smma"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://pharaonix.vercel.app/#website",
+          "name": "PHARAONIX",
+          "url": "https://pharaonix.vercel.app/",
+          "publisher": {
+            "@id": "https://pharaonix.vercel.app/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "xkco15dio6");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J02X3F3PWH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <script src="app.js"></script>
-</body>
+      gtag('config', 'G-J02X3F3PWH');
+    </script>
+  </head>
+  <body>
+    <!-- Fixed background video scroll canvas -->
+    <canvas id="bg-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none;"></canvas>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

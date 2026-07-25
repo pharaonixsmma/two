@@ -1,0 +1,212 @@
+PHASE 4.1 — PREMIUM REALISTIC SERVICE PREVIEWS
+
+Redesign ONLY the interactive preview panel inside the Services section.
+
+Do NOT modify:
+- Navigation
+- Hero
+- Scroll animations
+- Overall Services layout
+- Portfolio
+- Contact
+- Footer
+
+Keep the existing interaction where hovering over a service changes the preview.
+
+========================================================
+GOAL
+========================================================
+
+The current preview looks like a generic dashboard placeholder made from simple rectangles.
+
+It should instead feel like a REAL premium digital product.
+
+When visitors hover a service they should immediately think:
+
+"Wow... this actually looks like a real website or product."
+
+The preview should look like a professionally designed miniature product, not a wireframe.
+
+========================================================
+GENERAL REQUIREMENTS
+========================================================
+
+• Keep the current preview container.
+• Replace placeholder UI with realistic interfaces.
+• Every service gets its own unique preview.
+• Use real typography hierarchy.
+• Add realistic spacing.
+• Add images, buttons, sections, cards and layouts.
+• Every preview should feel believable.
+• Build the previews using HTML/CSS components instead of screenshots.
+• Keep everything lightweight and responsive.
+• Maintain the black + gold PHARAONIX design language.
+
+========================================================
+SERVICE 1
+WEBSITE DESIGN
+========================================================
+
+Display a miniature premium agency website.
+
+Include:
+
+• Floating navigation
+• Large editorial hero
+• Premium CTA
+• Beautiful image section
+• Featured projects
+• Testimonials
+• Footer
+
+The preview should look like a real landing page scaled down.
+
+========================================================
+SERVICE 2
+BRAND IDENTITY
+========================================================
+
+Display a miniature branding presentation.
+
+Include:
+
+• Large logo presentation
+• Color palette
+• Typography samples
+• Brand guidelines
+• Business card mockups
+• Packaging mockups
+• Social media examples
+
+Everything should resemble a professional branding case study.
+
+========================================================
+SERVICE 3
+AI AUTOMATION
+========================================================
+
+Display a realistic automation platform.
+
+Include:
+
+• Workflow builder
+• Connected nodes
+• CRM integration
+• Email automation
+• AI assistant panel
+• Analytics widgets
+• Live status indicators
+
+It should feel like a modern SaaS product.
+
+========================================================
+SERVICE 4
+DIGITAL MARKETING
+========================================================
+
+Display a premium marketing dashboard.
+
+Include:
+
+• Revenue charts
+• Campaign overview
+• Conversion analytics
+• Growth metrics
+• Audience insights
+• KPI cards
+• Trend graphs
+
+Avoid generic placeholder boxes.
+
+========================================================
+MICRO ANIMATIONS
+========================================================
+
+When hovering a service:
+
+Current preview:
+
+Fade out slightly
+↓
+
+Scale down to 98%
+↓
+
+New preview fades in
+↓
+
+Scale back to 100%
+
+Within each preview:
+
+• Numbers animate
+• Graphs grow
+• Progress bars animate
+• Cards slide slightly
+• Buttons glow subtly
+• Cursor interactions remain smooth
+
+Animations should feel elegant and restrained.
+
+========================================================
+3D INTERACTION
+========================================================
+
+Keep the existing mouse tracking.
+
+Improve it with:
+
+• Smoother interpolation
+• Slight inertia
+• Better depth
+• Softer rotation
+• Floating shadow
+• Subtle moving highlight across the surface
+
+The card should feel like a premium physical object rather than a flat panel.
+
+========================================================
+VISUAL QUALITY
+========================================================
+
+Every preview should look like a real product that PHARAONIX could deliver to a client.
+
+Avoid:
+
+❌ Wireframes
+❌ Placeholder rectangles
+❌ Empty boxes
+❌ Generic dashboard templates
+❌ Low-detail layouts
+
+Aim for:
+
+✅ Real landing pages
+✅ Real SaaS interfaces
+✅ Real branding presentations
+✅ Premium UI
+✅ Modern editorial layouts
+✅ High attention to detail
+
+========================================================
+PERFORMANCE
+========================================================
+
+Reuse existing animation libraries.
+
+Do not add unnecessary npm packages.
+
+Maintain smooth performance (60 FPS).
+
+========================================================
+FINAL CHECK
+========================================================
+
+Before finishing verify:
+
+✓ Preview changes correctly on hover
+✓ Animations are smooth
+✓ Layout remains responsive
+✓ No placeholder UI remains
+✓ Every preview looks like a real premium digital product
+✓ Existing functionality is preserved
